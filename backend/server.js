@@ -102,7 +102,7 @@ app.get("/api/filmes/:genero", (req, res) => {
     if (!genero[generoParam]){
         res.status(404).json({
             status: "error",
-            message: `genero ${generoParam} não encontrado`
+            message: `gênero ${generoParam} não encontrado`
         });
         return; 
     }

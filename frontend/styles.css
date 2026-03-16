@@ -29,21 +29,19 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 
     /* cria um fundo em gradiente (degradê) */
-    background: linear-gradient(to left, #e47a23a8, #be185d, #b91c1c);
+    background: linear-gradient(to right,black, #b91c1c);
 
 
     /* altura mínima da tela = 100% da viewport */
     min-height: 100vh;
 
     /* ativa o Flexbox */
-    display: flex;
+    
 
     /* centraliza horizontalmente */
-    justify-content: center;
-
+    
     /* centraliza verticalmente */
-    align-items: center;
-
+    
     /* espaçamento interno nas bordas da tela */
     padding: 20px;
 }
@@ -51,37 +49,26 @@ body {
 
 .container {
 
-    /* largura máxima do conteúdo */
-    max-width: 800px;
-
-    /* ocupa 100% até chegar no limite */
-    width: 100%;
-
-    /* fundo branco */
-    background: white;
-
-    /* espaço interno */
-    padding: 30px;
-
-    /* arredonda os cantos */
-    border-radius: 20px;
-
-    /* sombra do card */
-    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+   display: flex;
+   color: white;
+   flex-direction: column;
 }
 
 
 h1 {
 
     /* centraliza o título */
-    text-align: center;
+    
 
     /* espaço abaixo do título */
     margin-bottom: 10px;
 }
 
 
-.subtitle, footer {
+footer {
+    display: flex;
+    justify-content: center;
+  
 
     /* centraliza o subtítulo */
     text-align: center;
@@ -90,7 +77,7 @@ h1 {
     margin-bottom: 30px;
 
     /* cor do texto */
-    color: #666;
+    color: white;
 }
 
 
@@ -109,7 +96,7 @@ h1 {
     margin-bottom: 20px;
 
     /* altura mínima */
-    min-height: 200px;
+   
 
     /* ativa Flexbox */
     display: flex;
@@ -142,7 +129,6 @@ h1 {
     /* muda o cursor para indicar clique */
     cursor: pointer;
 }
-
 
 #genName {
 
@@ -241,7 +227,6 @@ input {
 }
 
 
-
 /* classe usada quando a API está carregando */
 .loading {
 
@@ -273,4 +258,9 @@ input {
 
     /* borda arredondada */
     border-radius: 20px;
+}
+
+p{
+    display: flex;
+    color: #bebebe;
 }
