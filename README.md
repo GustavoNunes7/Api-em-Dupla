@@ -13,6 +13,12 @@ Exemplo:
 Comédia → *Gente Grande*
 
 ---
+## 🖼️ Layout
+<img width="1916" height="912" alt="image" src="https://github.com/user-attachments/assets/c51d57e8-a455-452a-8d03-7742fdcccd97" />
+
+
+
+---
 
 ## 📖 Descrição do Projeto
 O **Movie Explorer** é uma aplicação web composta por **backend e frontend** que consome uma **API externa de filmes**.
@@ -56,7 +62,7 @@ git clone [link-do-repositorio]
 2. Entre na pasta do projeto:
 
 ```bash
-cd movie-explorer
+cd Api-em-dupla
 ```
 
 3. Instale as dependências:
