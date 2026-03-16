@@ -109,7 +109,7 @@ h1 {
     margin-bottom: 20px;
 
     /* altura mínima */
-    min-height: 400px;
+    min-height: 200px;
 
     /* ativa Flexbox */
     display: flex;

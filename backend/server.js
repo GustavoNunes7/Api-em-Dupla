@@ -95,7 +95,7 @@ app.get("/api/filmes/aleatorio", (req, res)=>{
 
 app.get("/api/filmes/:genero", (req, res) => {
     
-    // pega o parametro de url (ex. husky)
+    // pega o parametro de url (ex. comedia)
     const generoParam = req.params.genero.toLowerCase();
 
     //verifica se esse genero existe no json
@@ -106,7 +106,7 @@ app.get("/api/filmes/:genero", (req, res) => {
         });
         return; 
     }
-    // sortear foto de raça especifica
+    // sortear foto de gênero especifico
 
     const item = sortear(genero[generoParam]);
     res.json({
@@ -123,10 +123,9 @@ app.get("/api/filmes/:genero", (req, res) => {
 
 // iniciar o servidor
 
-app.listen(PORT, '0.0.0.0',() => {
-    console.log(`🚀 servidor rodando em http://0.0.0.0:${PORT});`)
-    console.log(`📂 Acesse de outra máquina usando: http://10.106.208.36:${PORT});`)
-    console.log(`📂 coloque fotos diretamente na pasta data/fotos);`)
+app.listen(PORT, () => {
+    console.log(`🚀 servidor rodando em http://10.106.208.36:${PORT}`);
+    console.log(`📂 coloque fotos diretamente na pasta data/fotos`);
     
     
 })
