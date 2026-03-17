@@ -93,7 +93,7 @@ async function buscarFilme(url) {
 
         // pega a posição 5 do array
         // que corresponde ao nome da raça
-        const genero = partes[5];
+        const genero = partes[4];
 
         // coloca a primeira letra maiúscula
         // ex: husky → Husky
